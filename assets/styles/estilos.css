@@ -1,0 +1,34 @@
+.titulo{
+text-align: center;
+color: #398327;
+margin-top: 30px;
+}
+
+.center{
+    display:inline-block;
+    vertical-align: middle;
+    line-height: normal;
+
+}
+.bannercaramanta {
+    background-image: url("../img/caramanta1.jpg");
+    background-position: top center;
+    background-size: cover;
+    padding: 25%;
+    background-attachment: fixed;
+}
+
+.grafico{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.item {
+    display: block;
+    width: 100%;
+    height: 700px;
+
+
+  }

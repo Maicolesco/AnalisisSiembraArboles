@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/assets/styles/estilos.css" />
+    <title>Siembra árboles</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/icons8-tree-16.png"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #398327;"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../views/index.html" style="color: white;">Zonas</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/views/santafe.html" style="color: white;"
+                  >Santa Fe de Antioquia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/views/yarumal.html"  style="color: white;"
+                  >Yarumal</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/views/caucasia.html"  style="color: white;"
+                  >Caucasia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/views/belmira.html"  style="color: white;">
+                  Belmira
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/views/bello.html"  style="color: white;"> Bello</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/views/caramanta.html"  style="color: white;">
+                  Caramanta
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/views/imagenes.html"  style="color: white;">
+                  Galería
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <h4 class="titulo" style="color: #398327;">
+          ANÁLISIS DE SIEMBRA DE ÁRBOLES EN CAUCASIA
+        </h1>
+        <hr>
+        <div class="row">
+          <div class="col-6">          
+              
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63219.128427237054!2d-75.2390282479742!3d7.97873201672221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5b6f03c070dcf1%3A0x5d4d101c959d9c74!2sCaucasia%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1686196817319!5m2!1ses!2sco"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            
+                    
+          </div>
+          <div class="col-6" >
+            <p class="center">
+              Caucasia es un municipio colombiano localizado en la subregión del Bajo Cauca del departamento de Antioquia. Es denominada la Capital del Bajo Cauca por ser el principal centro urbano y comercial de la subregión. Limita por el norte con el departamento de Córdoba, por el este con los municipios antioqueños de Nechí y El Bagre, por el sur con el municipio de Zaragoza, y por el oeste con el municipio de Cáceres.
+            </p>
+            <img src="/assets/img/barrastodaslaszonas.png" alt="Imagen" style="width: 600px;height: 400px;"/>  
+          </div>          
+        </div >   
+        
+        <div class="row">
+          <button type="button" class="btn btn-success" id="generarBoton">Mostrar Reporte</button>   
+        </div>               
+      </div>
+      <br>
+
+
+      <div class="d-none" id="reporte">
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0">
+
+            <iframe
+              src="/tables/tbl_tablaArboles.html"
+              class="w-100"
+              height="400px"
+            ></iframe>
+            <div class="grafico"> 
+              <img
+              src="/assets/img/datosCaramanta.png"
+              alt="Imagen"
+              class="img"
+              height="300px"
+              width="500px"
+              
+            />
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr>
+
+    <footer>
+      <div class="text-center">
+        <img src="../assets/img/arbol.png" alt="Árbol" class="footer-logo" width="200px">
+        <p class="footer-text">sociedad de árboles con vida.</p>
+        <p class="footer-text"><b>Michael Estrada Colorado</b> </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/controllers/controlador.js"></script>
+  </body>
+</html>
+
+
